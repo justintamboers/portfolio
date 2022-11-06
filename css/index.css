@@ -12,14 +12,24 @@ section[id="left"] {
     float: left;
     width: 300px;
     height: 100%;
-    text-align: center;
-    background-color: darkslategray;
+    background-color: darkkhaki;
 }
-section[id="right"] {
+section[class="right"] {
     margin-bottom: 25px;
     margin-top: 40px;
-    border: 2px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
     padding: 25px;
     width: 75%;
     float: left;
 }
+section[class="right"] b {
+    position: fixed;
+    color: darkkhaki;
+    text-align: right;
+}
+
+section[class="right"] li {
+    width: 400px;
+}
+
+
