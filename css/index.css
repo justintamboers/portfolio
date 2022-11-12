@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*links gedeelte*/
+h2 {
+    border-bottom: 1px solid darkgoldenrod;
+}
+div [class="left"] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+}
+div [class="left"] img {
+    margin: auto;
+    width: 80%;
+}
+div [class="left"] a{
+    text-decoration: none;
+    color: black;
+}
+/*rechts gedeelte*/
+div [class="right"] {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 75%;
+    height: 100%;
+    background-color: navajowhite;
+}
+section {
+    padding: 20px;
+}
+section b {
+    position: fixed;
+    color: darkgoldenrod;
+    text-align: right;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    background-color: burlywood;
+    height: 100%;
+    width: 100%;
+}
+/*navbar*/
+nav a {
+    color: #d9ddd7;
+    padding: 20px;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #6a7689;
+    position: sticky;
+}
+nav a:hover {
+    color: #6a7689;
+    background-color: #d9ddd7;
+}
+
+@media screen  and (max-width: 600px){
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
