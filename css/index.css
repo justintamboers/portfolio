@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    background-color: burlywood;
+    height: 100%;
+    width: 100%;
+}
+
 /*links gedeelte*/
 h2 {
     border-bottom: 1px solid darkgoldenrod;
@@ -15,12 +24,14 @@ div [class="left"] {
     flex-direction: column;
 }
 div [class="left"] img {
-    margin: auto;
-    width: 80%;
+    margin: 0;
+    width: 100%;
 }
 div [class="left"] a{
     text-decoration: none;
-    color: black;
+    width: 80%;
+    margin: 0 10%;
+    align-items: center;
 }
 /*rechts gedeelte*/
 div [class="right"] {
@@ -30,22 +41,45 @@ div [class="right"] {
     width: 75%;
     height: 100%;
     background-color: navajowhite;
+    text-align: left;
 }
 section {
     padding: 20px;
 }
 section b {
-    position: fixed;
     color: darkgoldenrod;
     text-align: right;
 }
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    border-collapse: collapse;
-    background-color: burlywood;
-    height: 100%;
+.certificaat {
     width: 100%;
+}
+li {
+    width: 100%;
+}
+.certificaat > ul > li > div{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 720px) and (min-width: 480px){
+    div [class="right"] {
+        width: 65%;
+    }
+    div [class="left"] {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 480px){
+    .main {
+        flex-direction: column;
+    }
+    div [class="right"] {
+        width: 100%;
+        align-items: center;
+    }
+    div [class="left"] {
+        width: 100%;
+        padding: 55px;
+    }
 }
 /*navbar*/
 nav a {
@@ -64,9 +98,42 @@ nav a:hover {
     background-color: #d9ddd7;
 }
 
-@media screen  and (max-width: 600px){
+@media screen  and (max-width: 480px){
     nav {
         flex-direction: column;
         text-align: center;
+    }
+}
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background-color: #6a7689;
+    color: #d9ddd7;
+}
+footer a {
+    color: #d9ddd7;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #6a7689;
+    background-color: #d9ddd7;
+}
+@media screen and (max-width: 480px){
+    footer {
+        flex-direction: column;
+        visibility: visible;
+        align-items: center;
+    }
+    footer a {
+        align-self: flex-end;
+
+        padding: 15px;
+    }
+    section [class="in links"] {
+        padding: 20px;
     }
 }
