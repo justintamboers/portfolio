@@ -11,21 +11,29 @@
     height: 100%;
     width: 100%;
 }
-
 /*links gedeelte*/
 h2 {
     border-bottom: 1px solid darkgoldenrod;
+    text-align: left;
+}
+.in_links p,.in_links td, b {
+    padding-bottom: 3px;
+}
+
+table{
+    padding: 20px;
 }
 div [class="left"] {
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
+    width: 20%;
     height: 100%;
     flex-direction: column;
 }
 div [class="left"] img {
     margin: 0;
     width: 100%;
+    border-radius: 10px;
 }
 div [class="left"] a{
     text-decoration: none;
@@ -33,13 +41,20 @@ div [class="left"] a{
     margin: 0 10%;
     align-items: center;
 }
+.foto:hover {
+    transition: 0.8s;
+    box-shadow: darkgray 5px 5px;
+}
+.foto:active {
+    box-shadow: none;
+}
+
 /*rechts gedeelte*/
 div [class="right"] {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    width: 75%;
-    height: 100%;
+    width: 80%;
     background-color: navajowhite;
     text-align: left;
 }
@@ -60,12 +75,20 @@ li {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 720px) and (min-width: 480px){
+@media screen and (max-width: 1355px) and (min-width: 480px){
     div [class="right"] {
         width: 65%;
     }
     div [class="left"] {
         width: 35%;
+    }
+}
+@media screen  and (max-width: 570px){
+    div [class="right"] {
+        width: 55%;
+    }
+    div [class="left"] {
+        width: 45%;
     }
 }
 @media screen and (max-width: 480px){
@@ -104,6 +127,23 @@ nav a:hover {
         text-align: center;
     }
 }
+/*nth-child left*/
+
+
+tr:nth-child(3) td:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: navajowhite;
+    display: flex;
+    justify-content: space-between;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
 /*footer*/
 footer {
     display: flex;
@@ -133,7 +173,7 @@ footer a:hover {
 
         padding: 15px;
     }
-    section [class="in links"] {
+    section [class="in_links"] {
         padding: 20px;
     }
 }
