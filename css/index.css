@@ -7,13 +7,23 @@
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
-    background-color: burlywood;
+    background-color: #778A8E;
+    color: white;
     height: 100%;
     width: 100%;
 }
 /*links gedeelte*/
+
+.in_links_gsm{
+    visibility: collapse;
+    height: 0%;
+}
+.in_links_gsm  div {
+    display: flex;
+    justify-content: space-between;
+}
 h2 {
-    border-bottom: 1px solid darkgoldenrod;
+    border-bottom: 1px solid #586a6e;
     text-align: left;
 }
 .in_links p,.in_links td, b {
@@ -22,6 +32,9 @@ h2 {
 
 table{
     padding: 20px;
+}
+[class="in_links_gsm"]{
+    visibility: collapse;
 }
 div [class="left"] {
     display: flex;
@@ -47,6 +60,7 @@ div [class="left"] a{
 }
 .foto:active {
     box-shadow: none;
+    border: 2px solid gray;
 }
 
 /*rechts gedeelte*/
@@ -55,14 +69,14 @@ div [class="right"] {
     flex-wrap: wrap;
     padding: 50px;
     width: 80%;
-    background-color: navajowhite;
+    background-color: #ADB2B5;
     text-align: left;
 }
 section {
     padding: 20px;
 }
 section b {
-    color: darkgoldenrod;
+    color: white;
     text-align: right;
 }
 .certificaat {
@@ -113,7 +127,7 @@ nav a {
 nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: #6a7689;
+    background-color: #586a6e;
     position: sticky;
 }
 nav a:hover {
@@ -126,7 +140,16 @@ nav a:hover {
         flex-direction: column;
         text-align: center;
     }
+    table {
+        visibility: collapse;
+        height: 0%;
+    }
+    .in_links_gsm{
+        visibility: visible;
+        height: 100%;
+    }
 }
+
 /*nth-child left*/
 
 
@@ -135,12 +158,12 @@ tr:nth-child(3) td:nth-child(1) {
     justify-content: space-between;
 }
 tr:nth-child(odd) td:nth-child(odd){
-    background-color: navajowhite;
+    background-color: #ADB2B5;
     display: flex;
     justify-content: space-between;
 }
 tr:nth-child(even) td:nth-child(odd){
-    background-color: antiquewhite;
+    background-color: #c1c6c9;
     display: flex;
     justify-content: space-between;
 }
@@ -151,7 +174,7 @@ footer {
     box-sizing: border-box;
     padding: 10px;
     width: 100%;
-    background-color: #6a7689;
+    background-color: #586a6e;
     color: #d9ddd7;
 }
 footer a {
@@ -172,8 +195,5 @@ footer a:hover {
         align-self: flex-end;
 
         padding: 15px;
-    }
-    section [class="in_links"] {
-        padding: 20px;
     }
 }
