@@ -1,0 +1,15 @@
+nav a {
+    color: #d9ddd7;
+    padding: 20px;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #586a6e;
+    width: 100%;
+}
+nav a:hover {
+    color: #6a7689;
+    background-color: #d9ddd7;
+}

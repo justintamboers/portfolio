@@ -72,6 +72,9 @@ div [class="right"] {
     background-color: #ADB2B5;
     text-align: left;
 }
+section[class="soft_skill"],[class="werk_erv"],[class="over_mij"]{
+    width: 100%;
+}
 section {
     padding: 20px;
 }
