@@ -1,3 +1,31 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+ol {
+    margin: 8px;
+    padding-bottom: 8px;
+}
+h2{
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+ h3, h5{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+[class="achtergrond"] {
+    background-color: #ADB2B5;
+    margin: 0;
+    padding: 0;
+}
+[class="h_top"] {
+    margin-top: 0;
+}
+img {
+    margin: 0;
+    border-radius: 10px;
+}
 nav a {
     color: #d9ddd7;
     padding: 20px;
@@ -8,8 +36,21 @@ nav {
     flex-wrap: wrap;
     background-color: #586a6e;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 nav a:hover {
     color: #6a7689;
     background-color: #d9ddd7;
+}
+@media screen  and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 620px)  {
+    img{
+        width: 100%;
+    }
 }
