@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial,Verdana,serif;
 }
 ol {
     margin: 8px;
@@ -9,6 +10,10 @@ ol {
 h2{
     margin-top: 32px;
     margin-bottom: 8px;
+    color: darkslateblue;
+}
+.list_opdrachten {
+    padding-top: 10px;
 }
  h3, h5{
     margin-top: 16px;
@@ -18,9 +23,12 @@ h2{
     background-color: #ADB2B5;
     margin: 0;
     padding: 0;
+    padding-bottom: 35px;
+    padding-left: 25px;
 }
 [class="h_top"] {
     margin-top: 0;
+    padding-top: 5px;
 }
 img {
     margin: 0;
